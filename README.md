@@ -12,7 +12,7 @@ Jika kalian juga ingin berkontribusi dengan project-project saya, jangan ragu un
 happy code 😁
 
 ##  Blog
-Mampir ke blog saya gan, https://ferryops.dev/artikel
+Mampir ke blog saya gan, https://dev.to/ferryops
 
 ##  Portofolio
 Mampir juga ke portofolio saya gan, https://ferryops.dev/resume/
