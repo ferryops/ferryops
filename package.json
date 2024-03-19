@@ -1,0 +1,18 @@
+{
+  "name": "ferryops",
+  "version": "1.0.0",
+  "description": "README.md project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "readme"
+  ],
+  "author": "ferryops",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
