@@ -1,6 +1,8 @@
 name: NodeJS with Grunt
 
 on:
+  schedule:
+    - cron: "*/10 * * * *"
   push:
     branches: ["main"]
   pull_request:
@@ -25,7 +27,7 @@ jobs:
       - name: Build
         run: npm install
 
-      - name: Generate README 1
+      - name: Generate README
         run: node index.js
 
       - name: Commit changes
