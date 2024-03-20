@@ -29,6 +29,8 @@ async function main() {
     const formattedRepos = formatRepos(repos);
 
     const readmeContent = `
+Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug
+${new Date()}
 | Artikel Terbaru | Projects Terbaru |
 |--|--|
 ${mergeColumns(formattedArticles, formattedRepos)}
