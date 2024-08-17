@@ -1,6 +1,6 @@
 
 Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug
-Sat Aug 17 2024 02:08:06 GMT+0000 (Coordinated Universal Time)
+Sat Aug 17 2024 02:08:24 GMT+0000 (Coordinated Universal Time)
 | Artikel Terbaru | Projects Terbaru |
 |--|--|
 | [🚀Cara Mudah Ganti Akun Github di Windows](https://dev.to/ferryops/cara-mudah-ganti-akun-github-di-windows-3am0) - 2024-05-21T01:35:56Z | [ferryops](https://github.com/ferryops/ferryops) - Readme generator with Node.js |
