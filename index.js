@@ -27,10 +27,17 @@ async function main() {
 
     const formattedArticles = formatArticles(articles);
     const formattedRepos = formatRepos(repos);
-
+    const now = new Date();
+    const formattedDate = now.toLocaleString("id-ID", {
+      timeZone: "Asia/Makassar",
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+      hour12: false,
+    });
     const readmeContent = `
 Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug
-${new Date()}
+${formattedDate}
 | Artikel Terbaru | Projects Terbaru |
 |--|--|
 ${mergeColumns(formattedArticles, formattedRepos)}

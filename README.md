@@ -1,12 +1,12 @@
 
 Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug
-Sat Aug 17 2024 02:08:24 GMT+0000 (Coordinated Universal Time)
+20 Agustus 2024
 | Artikel Terbaru | Projects Terbaru |
 |--|--|
-| [🚀Cara Mudah Ganti Akun Github di Windows](https://dev.to/ferryops/cara-mudah-ganti-akun-github-di-windows-3am0) - 2024-05-21T01:35:56Z | [ferryops](https://github.com/ferryops/ferryops) - Readme generator with Node.js |
-| [✅Ngoding via WSL atau Host Windows, Mana yang Lebih Gacor?](https://dev.to/ferryops/ngoding-via-wsl-atau-host-windows-mana-yang-lebih-gacor-4a70) - 2024-03-23T15:11:18Z | [ferryops.github.io](https://github.com/ferryops/ferryops.github.io) - - |
-| [Belajar Deploy Aplikasi Web Menggunakan Layanan ECS (Elastic Compute Service) Alibaba](https://dev.to/ferryops/belajar-deploy-aplikasi-web-menggunakan-layanan-ecs-elastic-compute-service-alibaba-4cek) - 2024-03-04T03:03:03Z | [blog](https://github.com/ferryops/blog) - - |
-| [Saatnya Menguasai useContext React di Luar Kepala](https://dev.to/ferryops/saatnya-menguasai-usecontext-react-di-luar-kepala-53fj) - 2024-02-08T14:57:42Z | [api-public](https://github.com/ferryops/api-public) - - |
+| [🚀Cara Mudah Ganti Akun Github di Windows](https://dev.to/ferryops/cara-mudah-ganti-akun-github-di-windows-3am0) - 2024-05-21T01:35:56Z | [api-public](https://github.com/ferryops/api-public) - - |
+| [✅Ngoding via WSL atau Host Windows, Mana yang Lebih Gacor?](https://dev.to/ferryops/ngoding-via-wsl-atau-host-windows-mana-yang-lebih-gacor-4a70) - 2024-03-23T15:11:18Z | [ferryops](https://github.com/ferryops/ferryops) - Readme generator with Node.js |
+| [Belajar Deploy Aplikasi Web Menggunakan Layanan ECS (Elastic Compute Service) Alibaba](https://dev.to/ferryops/belajar-deploy-aplikasi-web-menggunakan-layanan-ecs-elastic-compute-service-alibaba-4cek) - 2024-03-04T03:03:03Z | [ferryops.github.io](https://github.com/ferryops/ferryops.github.io) - - |
+| [Saatnya Menguasai useContext React di Luar Kepala](https://dev.to/ferryops/saatnya-menguasai-usecontext-react-di-luar-kepala-53fj) - 2024-02-08T14:57:42Z | [blog](https://github.com/ferryops/blog) - - |
 | [Mana yang Lebih Baik: obj.hasOwnProperty(prop) vs Object.keys(obj). includes(prop)](https://dev.to/ferryops/mana-yang-lebih-baik-objhasownpropertyprop-vs-objectkeysobjincludesprop-2895) - 2024-02-05T13:17:39Z | [Patient-Reservation-with-Next.js-and-Firebase](https://github.com/ferryops/Patient-Reservation-with-Next.js-and-Firebase) - Patient Reservation with Next.js 14, Next.UI and Firebase |
 | [React Fragment VS DIV, Kapan Waktu yang Tepat Menggunakannya?](https://dev.to/ferryops/react-fragment-vs-div-kapan-waktu-yang-tepat-menggunakannya-1cm9) - 2024-02-05T12:39:23Z | [auto-subsiditepatlpg-mypertamina](https://github.com/ferryops/auto-subsiditepatlpg-mypertamina) - - |
 | [🌀Cara Buat Static Post Blog di Next.js dengan Markdown File](https://dev.to/ferryops/cara-buat-static-post-blog-di-nextjs-dengan-markdown-file-18ok) - 2023-11-28T14:30:00Z | [sistem-pakar-iso-27002](https://github.com/ferryops/sistem-pakar-iso-27002) - Sistem Pakar untuk Risk Assessment keamanan sistem informasi  berdasarkan standar ISO 27002 menggunakan metode Certainty Factor |
