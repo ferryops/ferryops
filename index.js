@@ -36,8 +36,7 @@ async function main() {
       hour12: false,
     });
     const readmeContent = `
-Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug
-${formattedDate}
+Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug, update terakhir: ${formattedDate}
 | Artikel Terbaru | Projects Terbaru |
 |--|--|
 ${mergeColumns(formattedArticles, formattedRepos)}
