@@ -2,19 +2,31 @@ import fs from "fs";
 import fetch from "node-fetch";
 
 async function fetchArticles(username) {
-  const response = await fetch(`https://dev.to/api/articles?username=${username}`);
-  const articles = await response.json();
-  return articles;
+  try {
+    const response = await fetch(`https://dev.to/api/articles?username=${username}`);
+    const articles = await response.json();
+    return articles;
+  } catch (error) {
+    console.error("Terjadi kesalahan saat mengambil artikel:", error);
+    return [];
+  }
 }
 
 async function fetchGitHubRepos(username) {
-  const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
-  const repos = await response.json();
-  return repos;
+  try {
+    const response = await fetch(`https://api.github.com/users/${username}/repos?sort=updated`);
+    const repos = await response.json();
+    return repos;
+  } catch (error) {
+    console.error("Terjadi kesalahan saat mengambil repositori:", error);
+    return [];
+  }
 }
 
 function formatArticles(articles) {
-  return articles.map((article) => `[${article.title}](${article.url}) - ${article.published_at}`).join("\n");
+  return articles
+    .map((article) => `[${article.title}](${article.url}) - ${article.published_at.replace("T", " ").replace("Z", "")}`)
+    .join("\n");
 }
 
 function formatRepos(repos) {
@@ -28,14 +40,16 @@ async function main() {
     const formattedArticles = formatArticles(articles);
     const formattedRepos = formatRepos(repos);
     const now = new Date();
+
     const formattedDate = now.toLocaleString("id-ID", {
       timeZone: "Asia/Makassar",
       year: "numeric",
       month: "long",
       day: "numeric",
-      hour12: false,
     });
+
     const readmeContent = `
+
 Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug, update terakhir: ${formattedDate}
 | Artikel Terbaru | Projects Terbaru |
 |--|--|
