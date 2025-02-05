@@ -22,3 +22,5 @@ Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan min
 | [💫Solved: Cara Install Postgresql dan pgadmin di Arch Linux | Manjaro](https://dev.to/ferryops/solved-cara-install-postgresql-dan-pgadmin-di-arch-linux-manjaro-1okk) - 2023-11-21 07:13:00 | [sveltekit-vite-tailwindcss-ts](https://github.com/ferryops/sveltekit-vite-tailwindcss-ts) - sveltekit starter project with vite, tailwindcss and typescript |
 | [🔅Solved: Cara Mengatasi Web Browser yang Selalu Minta Login Akun](https://dev.to/ferryops/solved-cara-mengatasi-web-browser-yang-selalu-minta-login-akun-4pel) - 2023-11-20 06:13:19 | [seleksi-pegawai-dengan-c](https://github.com/ferryops/seleksi-pegawai-dengan-c) - Program seleksi calon pegawai dengan C |
 
+<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ferry-ananda-febian" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/ferry-ananda-febian?trk=profile-badge">Ferry Ananda Febian</a></div>
+              
