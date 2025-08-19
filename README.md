@@ -1,29 +1,54 @@
-![Github Stats](https://github-readme-stats.vercel.app/api?bg_color=0000&title_color=4C71F1&text_color=8A919F&line_height=24&border_color=8884&username=ferryops&hide=contribs&show_icons=true&count_private=true&theme=vue)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?bg_color=0000&title_color=4C71F1&text_color=8A919F&card_width=240&border_color=8884&username=ferryops&layout=compact&theme=vue&hide=html,css)
+# 👋 Halo, saya Ferry
 
-![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ferryops)
+Suka ngerjain **solusi yang jalan cepat ke produksi, gampang dirawat,** dan pastinya **ngasih dampak nyata**, bukan cuma nambah baris kode doang. 🚀
 
-Saya tidak cuma nulis tentang teknologi, tapi juga nulis kode yang bagus dan minim bug, update terakhir: 21 September 2024
-| Artikel Terbaru | Projects Terbaru |
+Saya seorang **Full-stack Developer** dan **freelancer**. Udah biasa bikin produk dari nol sampe live, dari mikirin arsitektur sampai deploy. Intinya, saya suka ngeubah ide jadi solusi yang bener-bener kepake
+
+**Tech yang sering saya dipake:** `React` · `Next.js` · `Express` · `Node.js` · `TypeScript` · `REST`/`GraphQL` · `CI/CD` (GitHub Actions, Vercel, Docker)
+
+- 🔧 End-to-end delivery: dari arsitektur, implementasi, hingga deployment.
+- 🧹 Kualitas: codebase bersih, minim bug, dan observability sejak awal.
+- ⚡ Kecepatan: iterasi cepat tanpa mengorbankan maintainability.
+
+[![Contact Badge](https://img.shields.io/badge/Hire%20Me-Freelance-informational)](mailto:ferryops@gmail.com)
+[![Blog Badge](https://img.shields.io/badge/Blog-active-blue)](https://dev.to/ferryops)
+[![GitHub Followers](https://img.shields.io/github/followers/ferryops?style=social)](https://github.com/ferryops)
+
+---
+
+### 🚀 Highlights
+- Suka scroll grup facebook **Ingin Menjadi Programmer Handal, Namun Enggan Ngoding** buat cari inspirasi dan berbagi ilmu.
+- Rajin nulis soal software engineering & cerita-cerita praktik di lapangan.
+- Fokus di **hasil nyata**: cepat dirilis, stabil, gampang diskalakan.
+
+### 📝 Artikel Terbaru
+- [Tambah Fitur di Aplikasi Malah Bikin Bagian Lain Error?](https://dev.to/ferryops/tambah-fitur-di-aplikasi-malah-bikin-bagian-lain-error-50hn) • 12 Agu 2025
+- [🏃Pakai Tanstack Query, Waktunya Meninggalkan useState dan useEffect](https://dev.to/ferryops/pakai-tanstack-query-waktunya-meninggalkan-usestate-dan-useeffect-59o7) • 07 Mei 2025
+- [Ternyata Selama Ini Saya Fetching Data Tidak Efisien di React](https://dev.to/ferryops/ternyata-selama-ini-saya-fetching-data-tidak-efisien-di-react-57kh) • 22 Mar 2025
+- [🚀TypeScript 10x Lebih Ngebut: Inovasi Gede Buat Developer JavaScript](https://dev.to/ferryops/typescript-10x-lebih-ngebut-inovasi-gede-buat-developer-javascript-4gm1) • 16 Mar 2025
+- [🔁Cara Mudah Reverse Proxy di cPanel dengan Nginx](https://dev.to/ferryops/cara-mudah-reverse-proxy-di-cpanel-dengan-nginx-4opi) • 15 Mar 2025
+- [💸Developer yang Membayar Hutang Teknis](https://dev.to/ferryops/developer-yang-membayar-hutang-teknis-47oa) • 13 Feb 2025
+- [🚀Begini Cara Saya Percepat Proses Workflows di GitHub Actions](https://dev.to/ferryops/begini-cara-saya-percepat-proses-workflows-di-github-actions-43h) • 07 Feb 2025
+- [🚚Memprediksi Geofence di Depan dengan Turf.js: Solusi Cerdas untuk Jalur Hauling](https://dev.to/ferryops/memprediksi-geofence-di-depan-dengan-turfjs-solusi-cerdas-untuk-jalur-hauling-39b4) • 08 Des 2024
+
+### 🧩 Projects Terbaru
+| Artikel | Repositori |
 |--|--|
-| [⚡Mencoba Komparasi Seberapa Kencang Performa Bun dibandingkan Node](https://dev.to/ferryops/mencoba-komparasi-seberapa-kencang-performa-bun-dibandingkan-node-3nl0) - 2024-09-18 04:41:05 | [ferryops.github.io](https://github.com/ferryops/ferryops.github.io) - - |
-| [🚀Cara Mudah Ganti Akun Github di Windows](https://dev.to/ferryops/cara-mudah-ganti-akun-github-di-windows-3am0) - 2024-05-21 01:35:56 | [api-public](https://github.com/ferryops/api-public) - - |
-| [✅Ngoding via WSL atau Host Windows, Mana yang Lebih Gacor?](https://dev.to/ferryops/ngoding-via-wsl-atau-host-windows-mana-yang-lebih-gacor-4a70) - 2024-03-23 15:11:18 | [ferryops](https://github.com/ferryops/ferryops) - Readme generator with Node.js |
-| [Belajar Deploy Aplikasi Web Menggunakan Layanan ECS (Elastic Compute Service) Alibaba](https://dev.to/ferryops/belajar-deploy-aplikasi-web-menggunakan-layanan-ecs-elastic-compute-service-alibaba-4cek) - 2024-03-04 03:03:03 | [Patient-Reservation-with-Next.js-and-Firebase](https://github.com/ferryops/Patient-Reservation-with-Next.js-and-Firebase) - Patient Reservation with Next.js 14, Next.UI and Firebase |
-| [Saatnya Menguasai useContext React di Luar Kepala](https://dev.to/ferryops/saatnya-menguasai-usecontext-react-di-luar-kepala-53fj) - 2024-02-08 14:57:42 | [auto-subsiditepatlpg-mypertamina](https://github.com/ferryops/auto-subsiditepatlpg-mypertamina) - - |
-| [Mana yang Lebih Baik: obj.hasOwnProperty(prop) vs Object.keys(obj). includes(prop)](https://dev.to/ferryops/mana-yang-lebih-baik-objhasownpropertyprop-vs-objectkeysobjincludesprop-2895) - 2024-02-05 13:17:39 | [sistem-pakar-iso-27002](https://github.com/ferryops/sistem-pakar-iso-27002) - Sistem Pakar untuk Risk Assessment keamanan sistem informasi  berdasarkan standar ISO 27002 menggunakan metode Certainty Factor |
-| [React Fragment VS DIV, Kapan Waktu yang Tepat Menggunakannya?](https://dev.to/ferryops/react-fragment-vs-div-kapan-waktu-yang-tepat-menggunakannya-1cm9) - 2024-02-05 12:39:23 | [Ramadhan-Code-Fest](https://github.com/ferryops/Ramadhan-Code-Fest) - - |
-| [🌀Cara Buat Static Post Blog di Next.js dengan Markdown File](https://dev.to/ferryops/cara-buat-static-post-blog-di-nextjs-dengan-markdown-file-18ok) - 2023-11-28 14:30:00 | [RFID-attend-web](https://github.com/ferryops/RFID-attend-web) - RFID Attendance with Dashboard reports | Next.js 14 and MySQL |
-| [✨Cara Embed Post Twitter di Next.js dengan Library react-tweet](https://dev.to/ferryops/cara-embed-post-twitter-di-nextjs-dengan-library-react-tweet-3aj2) - 2023-11-28 14:18:00 | [e-commerce-konnco-studio](https://github.com/ferryops/e-commerce-konnco-studio) - Soal Technical Test – Konnco Studio |
-| [🗺Cara Mudah Buat Sitemap di Next.js 13 dengan next-sitemap](https://dev.to/ferryops/cara-mudah-buat-sitemap-di-nextjs-13-dengan-next-sitemap-13ji) - 2023-11-27 14:05:00 | [next-js-ecs](https://github.com/ferryops/next-js-ecs) - - |
-| [Cara Buat Dark Mode di Next.js 13 dengan Tailwind CSS](https://dev.to/ferryops/cara-buat-dark-mode-di-nextjs-13-dengan-tailwind-css-4d6c) - 2023-11-26 13:58:00 | [UAS_PBP](https://github.com/ferryops/UAS_PBP) - - |
-| [😮‍💨Saya Menyesal Beli Domain my.id](https://dev.to/ferryops/saya-menyesal-beli-domain-myid-3di6) - 2023-11-26 07:18:00 | [blog-stacktugas-id](https://github.com/ferryops/blog-stacktugas-id) - Simple blog using Next and Markdown |
-| [👩‍💻Cara Install Code Highlight di Next.js dan CMS Sanity dengan SyntaxHighlighter](https://dev.to/ferryops/cara-install-code-highlight-di-nextjs-dan-cms-sanity-dengan-syntaxhighlighter-mo7) - 2023-11-25 07:16:00 | [portal-berita-ci4](https://github.com/ferryops/portal-berita-ci4) - Aplikasi portal berita dengan media JSON, export excel, export pdf, graphic chart |
-| [🌠Cara Mudah Install Disqus di Next.js + Sanity CMS](https://dev.to/ferryops/cara-mudah-install-disqus-di-nextjs-sanity-cms-8hj) - 2023-11-24 07:15:00 | [toko-barokah-balikpapan](https://github.com/ferryops/toko-barokah-balikpapan) - Landing Page Toko Barokah |
-| [💤Cara Mudah Jalankan File sh/bash di Windows](https://dev.to/ferryops/cara-mudah-jalankan-file-shbash-di-windows-3f42) - 2023-11-23 07:14:00 | [lfca-quiz](https://github.com/ferryops/lfca-quiz) - lfca quiz answer |
-| [💥Ini Caraku Meredirect User ke Aplikasi Android](https://dev.to/ferryops/ini-caraku-meredirect-user-ke-aplikasi-android-b0d) - 2023-11-21 16:00:00 | [taskboard](https://github.com/ferryops/taskboard) - Aplikasi Pencatat Tugas Mirip Taskboard |
-| [💫Solved: Cara Install Postgresql dan pgadmin di Arch Linux | Manjaro](https://dev.to/ferryops/solved-cara-install-postgresql-dan-pgadmin-di-arch-linux-manjaro-1okk) - 2023-11-21 07:13:00 | [sveltekit-vite-tailwindcss-ts](https://github.com/ferryops/sveltekit-vite-tailwindcss-ts) - sveltekit starter project with vite, tailwindcss and typescript |
-| [🔅Solved: Cara Mengatasi Web Browser yang Selalu Minta Login Akun](https://dev.to/ferryops/solved-cara-mengatasi-web-browser-yang-selalu-minta-login-akun-4pel) - 2023-11-20 06:13:19 | [seleksi-pegawai-dengan-c](https://github.com/ferryops/seleksi-pegawai-dengan-c) - Program seleksi calon pegawai dengan C |
+| - [Tambah Fitur di Aplikasi Malah Bikin Bagian Lain Error?](https://dev.to/ferryops/tambah-fitur-di-aplikasi-malah-bikin-bagian-lain-error-50hn) • 12 Agu 2025 | [toko-barokah-balikpapan](https://github.com/ferryops/toko-barokah-balikpapan) — Landing Page Toko Barokah  |
+| - [🏃Pakai Tanstack Query, Waktunya Meninggalkan useState dan useEffect](https://dev.to/ferryops/pakai-tanstack-query-waktunya-meninggalkan-usestate-dan-useeffect-59o7) • 07 Mei 2025 | [VOYATRAX](https://github.com/ferryops/VOYATRAX) — Voyatrax adalah aplikasi pemesanan tiket pesawat berbasis web yang dibangun dengan Next.js 15, Tailwind CSS, dan Supabase. Aplikasi ini menyediakan fitur pemesanan tiket bagi pengguna, serta dashboard khusus untuk admin. |
+| - [Ternyata Selama Ini Saya Fetching Data Tidak Efisien di React](https://dev.to/ferryops/ternyata-selama-ini-saya-fetching-data-tidak-efisien-di-react-57kh) • 22 Mar 2025 | [inventory-manager-flutter](https://github.com/ferryops/inventory-manager-flutter) — A simple and lightweight inventory management app built with Flutter. It allows users to easily add, edit, and delete inventory items with persistent local storage. Includes support for dark/light themes and intuitive swipe gestures. |
+| - [🚀TypeScript 10x Lebih Ngebut: Inovasi Gede Buat Developer JavaScript](https://dev.to/ferryops/typescript-10x-lebih-ngebut-inovasi-gede-buat-developer-javascript-4gm1) • 16 Mar 2025 | [note-keeper-flutter](https://github.com/ferryops/note-keeper-flutter) — Note Keeper adalah aplikasi pencatat sederhana berbasis Flutter yang memungkinkan pengguna menulis, menyimpan, dan menghapus catatan. Aplikasi ini mendukung mode gelap/terang, menyimpan catatan secara lokal dengan SQLite, dan menggunakan Sharedpreferences untuk menyimpan preferensi tema |
+| - [🔁Cara Mudah Reverse Proxy di cPanel dengan Nginx](https://dev.to/ferryops/cara-mudah-reverse-proxy-di-cpanel-dengan-nginx-4opi) • 15 Mar 2025 | [KalkuRate](https://github.com/ferryops/KalkuRate) — Kalkulasi Remunerasi Tenaga Ahli Lebih Cepat, Lebih Cermat |
+| - [💸Developer yang Membayar Hutang Teknis](https://dev.to/ferryops/developer-yang-membayar-hutang-teknis-47oa) • 13 Feb 2025 | [logam-mulia](https://github.com/ferryops/logam-mulia) — null |
+| - [🚀Begini Cara Saya Percepat Proses Workflows di GitHub Actions](https://dev.to/ferryops/begini-cara-saya-percepat-proses-workflows-di-github-actions-43h) • 07 Feb 2025 | [ferryops.github.io](https://github.com/ferryops/ferryops.github.io) — null |
+| - [🚚Memprediksi Geofence di Depan dengan Turf.js: Solusi Cerdas untuk Jalur Hauling](https://dev.to/ferryops/memprediksi-geofence-di-depan-dengan-turfjs-solusi-cerdas-untuk-jalur-hauling-39b4) • 08 Des 2024 | [quiz-flutter](https://github.com/ferryops/quiz-flutter) — null |
 
-<div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="ferry-ananda-febian" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://id.linkedin.com/in/ferry-ananda-febian?trk=profile-badge">Ferry Ananda Febian</a></div>
-              
+
+---
+
+### 📊 Stats
+![Github Stats](https://github-readme-stats.vercel.app/api?bg_color=0000&title_color=4C71F1&text_color=8A919F&line_height=24&border_color=8884&username=ferryops&hide=contribs&show_icons=true&count_private=true&theme=vue)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?bg_color=0000&title_color=4C71F1&text_color=8A919F&card_width=240&border_color=8884&username=ferryops&layout=compact&theme=vue)
+
+> Terakhir diperbarui: **19 Agustus 2025** (Asia/Makassar)
+
