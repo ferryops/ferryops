@@ -24,9 +24,7 @@ async function fetchArticles(username) {
 async function fetchGitHubRepos(username) {
   try {
     // sort=updated untuk yang paling baru disentuh
-    const res = await fetch(
-      `https://api.github.com/users/${username}/repos?sort=updated&per_page=100`
-    );
+    const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
     if (!res.ok) throw new Error(`GitHub ${res.status}`);
     const repos = await res.json();
     return Array.isArray(repos) ? repos : [];
@@ -59,18 +57,14 @@ function escapePipes(str = "") {
 function formatArticles(articles) {
   return articles
     .slice(0, MAX_ITEMS)
-    .map(
-      (a) => `- [${a.title}](${a.url}) • ${fmtDateISOToLocal(a.published_at)}`
-    )
+    .map((a) => `- [${a.title}](${a.url}) • ${fmtDateISOToLocal(a.published_at)}`)
     .join("\n");
 }
 
 function formatRepos(repos) {
   return repos
     .slice(0, MAX_ITEMS)
-    .map(
-      (r) => `[${r.name}](${r.html_url}) — ${escapePipes(r.description) || "-"}`
-    )
+    .map((r) => `[${r.name}](${r.html_url}) — ${escapePipes(r.description) || "-"}`)
     .join("\n");
 }
 
@@ -90,30 +84,22 @@ function mergeColumns(column1, column2) {
 
 /** ====== TEMPLATE ====== */
 function buildReadme({ formattedArticles, formattedRepos, formattedDate }) {
-  // deskripsi yang menekankan "penyelesaian solusi"
-  const headline =
-    "Suka ngerjain **solusi yang jalan cepat ke produksi, gampang dirawat,** dan pastinya **ngasih dampak nyata**, bukan cuma nambah baris kode doang. 🚀";
+  // headline versi humble & singkat
+  const headline = "Sedang belajar jadi **software engineer** dan tertarik bikin solusi yang benar-benar bisa dipakai.";
 
   const bio = [
-    "Saya seorang **Full-stack Developer** dan **freelancer**.",
-    "Udah biasa bikin produk dari nol sampe live, dari mikirin arsitektur sampai deploy.",
-    "Intinya, saya suka ngeubah ide jadi solusi yang bener-bener kepake",
+    "Saat ini sering ngulik **full-stack development**,",
+    "dari ngerjain ide sederhana sampai aplikasi bisa rilis dan dipakai.",
+    "Masih terus belajar soal arsitektur, kualitas kode,",
+    "dan cara ngembangin produk yang rapi, stabil, dan gampang dirawat.",
   ].join(" ");
 
-  const stacks = [
-    "`React`",
-    "`Next.js`",
-    "`Express`",
-    "`Node.js`",
-    "`TypeScript`",
-    "`REST`/`GraphQL`",
-    "`CI/CD` (GitHub Actions, Vercel, Docker)",
-  ].join(" · ");
+  const stacks = ["`React`", "`Next.js`", "`Node.js`", "`TypeScript`", "`REST`/`GraphQL`", "`CI/CD`"].join(" · ");
 
   const valueProps = [
-    "🔧 End-to-end delivery: dari arsitektur, implementasi, hingga deployment.",
-    "🧹 Kualitas: codebase bersih, minim bug, dan observability sejak awal.",
-    "⚡ Kecepatan: iterasi cepat tanpa mengorbankan maintainability.",
+    "🔧 Belajar memahami proses dari ide sampai aplikasi bisa dipakai.",
+    "🧹 Berusaha nulis kode yang jelas dan gampang dirawat.",
+    "⚡ Menjaga keseimbangan antara kecepatan dan maintainability.",
   ]
     .map((v) => `- ${v}`)
     .join("\n");
@@ -124,7 +110,7 @@ ${headline}
 
 ${bio}
 
-**Tech yang sering saya dipake:** ${stacks}
+**Tech yang sering dipakai:** ${stacks}
 
 ${valueProps}
 
@@ -134,10 +120,10 @@ ${valueProps}
 
 ---
 
-### 🚀 Highlights
-- Suka scroll grup facebook **Ingin Menjadi Programmer Handal, Namun Enggan Ngoding** buat cari inspirasi dan berbagi ilmu.
-- Rajin nulis soal software engineering & cerita-cerita praktik di lapangan.
-- Fokus di **hasil nyata**: cepat dirilis, stabil, gampang diskalakan.
+### 🚀 Catatan
+- Suka nongkrong di grup Facebook **Ingin Menjadi Programmer Handal, Namun Enggan Ngoding** 😄
+- Suka nulis dan berbagi cerita soal software engineering.
+- Tertarik sama produk yang sederhana, cepat dirilis, dan bisa berkembang.
 
 ### 📝 Artikel Terbaru
 ${formattedArticles || "_Belum ada artikel terbaru yang ditampilkan._"}
@@ -154,17 +140,13 @@ ${mergeColumns(formattedArticles, formattedRepos)}
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?bg_color=0000&title_color=4C71F1&text_color=8A919F&card_width=240&border_color=8884&username=${GITHUB_USERNAME}&layout=compact&theme=vue)
 
 > Terakhir diperbarui: **${formattedDate}** (${TIMEZONE})
-
 `;
 }
 
 /** ====== MAIN ====== */
 async function main() {
   try {
-    const [articles, repos] = await Promise.all([
-      fetchArticles(DEVTO_USERNAME),
-      fetchGitHubRepos(GITHUB_USERNAME),
-    ]);
+    const [articles, repos] = await Promise.all([fetchArticles(DEVTO_USERNAME), fetchGitHubRepos(GITHUB_USERNAME)]);
 
     const formattedArticles = formatArticles(articles);
     const formattedRepos = formatRepos(repos);
