@@ -5,40 +5,50 @@ import fetch from "node-fetch";
 /** ====== CONFIG ====== */
 const GITHUB_USERNAME = "ferryops";
 const DEVTO_USERNAME = "ferryops";
-const MAX_ITEMS = 8; // batasi jumlah item supaya rapi
+const MAX_ARTICLES = 6;
+const MAX_REPOS = 6;
 const TIMEZONE = "Asia/Makassar";
+const EMAIL = "ferry.a.febian@gmail.com";
+const LINKEDIN = "https://www.linkedin.com/in/ferry-ananda-febian";
+const PORTFOLIO = "https://ferryops.vercel.app";
 
 /** ====== FETCHERS ====== */
 async function fetchArticles(username) {
   try {
-    const res = await fetch(`https://dev.to/api/articles?username=${username}`);
-    if (!res.ok) throw new Error(`Dev.to ${res.status}`);
+    const res = await fetch(`https://dev.to/api/articles?username=${username}&per_page=10`);
+    if (!res.ok) throw new Error(`Dev.to responded with ${res.status}`);
     const articles = await res.json();
-    return Array.isArray(articles) ? articles : [];
+    // filter out boost/empty title articles
+    return Array.isArray(articles)
+      ? articles.filter((a) => a.title && !a.title.startsWith("[Boost]"))
+      : [];
   } catch (error) {
-    console.error("Terjadi kesalahan saat mengambil artikel:", error);
+    console.error("Failed to fetch articles:", error);
     return [];
   }
 }
 
 async function fetchGitHubRepos(username) {
   try {
-    // sort=updated untuk yang paling baru disentuh
-    const res = await fetch(`https://api.github.com/users/${username}/repos?sort=updated&per_page=100`);
-    if (!res.ok) throw new Error(`GitHub ${res.status}`);
+    const res = await fetch(
+      `https://api.github.com/users/${username}/repos?sort=updated&per_page=100`,
+      { headers: { Accept: "application/vnd.github+json" } }
+    );
+    if (!res.ok) throw new Error(`GitHub responded with ${res.status}`);
     const repos = await res.json();
-    return Array.isArray(repos) ? repos : [];
+    return Array.isArray(repos)
+      ? repos.filter((r) => !r.fork && r.name !== username) // exclude forks and profile repo itself
+      : [];
   } catch (error) {
-    console.error("Terjadi kesalahan saat mengambil repositori:", error);
+    console.error("Failed to fetch repositories:", error);
     return [];
   }
 }
 
 /** ====== FORMATTERS ====== */
-function fmtDateISOToLocal(iso) {
+function fmtDate(iso) {
   try {
-    const d = new Date(iso);
-    return d.toLocaleString("id-ID", {
+    return new Date(iso).toLocaleDateString("en-US", {
       timeZone: TIMEZONE,
       year: "numeric",
       month: "short",
@@ -50,124 +60,123 @@ function fmtDateISOToLocal(iso) {
 }
 
 function escapePipes(str = "") {
-  // agar deskripsi repo tidak merusak tabel markdown
   return String(str).replace(/\|/g, "\\|");
 }
 
 function formatArticles(articles) {
   return articles
-    .slice(0, MAX_ITEMS)
-    .map((a) => `- [${a.title}](${a.url}) • ${fmtDateISOToLocal(a.published_at)}`)
+    .slice(0, MAX_ARTICLES)
+    .map((a) => `- [${a.title}](${a.url}) — ${fmtDate(a.published_at)}`)
     .join("\n");
 }
 
 function formatRepos(repos) {
   return repos
-    .slice(0, MAX_ITEMS)
-    .map((r) => `[${r.name}](${r.html_url}) — ${escapePipes(r.description) || "-"}`)
+    .slice(0, MAX_REPOS)
+    .map((r) => `| [**${r.name}**](${r.html_url}) | ${escapePipes(r.description) || "—"} |`)
     .join("\n");
-}
-
-function mergeColumns(column1, column2) {
-  const lines1 = (column1 || "").split("\n").filter(Boolean);
-  const lines2 = (column2 || "").split("\n").filter(Boolean);
-  const max = Math.max(lines1.length, lines2.length) || 1;
-  let merged = "";
-
-  for (let i = 0; i < max; i++) {
-    const c1 = lines1[i] || "";
-    const c2 = lines2[i] || "";
-    merged += `| ${c1} | ${c2} |\n`;
-  }
-  return merged;
 }
 
 /** ====== TEMPLATE ====== */
 function buildReadme({ formattedArticles, formattedRepos, formattedDate }) {
-  // headline versi humble & singkat
-  const headline = "Sedang belajar jadi **software engineer** dan tertarik bikin solusi yang benar-benar bisa dipakai.";
+  const stacks = [
+    "`JavaScript`",
+    "`TypeScript`",
+    "`Node.js`",
+    "`React`",
+    "`Next.js`",
+    "`PostgreSQL`",
+    "`Docker`",
+    "`Kubernetes`",
+    "`CI/CD`",
+  ].join(" · ");
 
-  const bio = [
-    "Saat ini sering ngulik **full-stack development**,",
-    "dari ngerjain ide sederhana sampai aplikasi bisa rilis dan dipakai.",
-    "Masih terus belajar soal arsitektur, kualitas kode,",
-    "dan cara ngembangin produk yang rapi, stabil, dan gampang dirawat.",
-  ].join(" ");
+  return `# Hi, I'm Ferry 👋
 
-  const stacks = ["`React`", "`Next.js`", "`Node.js`", "`TypeScript`", "`REST`/`GraphQL`", "`CI/CD`"].join(" · ");
+**Technical Lead & Full Stack Engineer** based in Balikpapan, East Kalimantan, Indonesia.
 
-  const valueProps = [
-    "🔧 Belajar memahami proses dari ide sampai aplikasi bisa dipakai.",
-    "🧹 Berusaha nulis kode yang jelas dan gampang dirawat.",
-    "⚡ Menjaga keseimbangan antara kecepatan dan maintainability.",
-  ]
-    .map((v) => `- ${v}`)
-    .join("\n");
+I build scalable, reliable end-to-end systems for the mining and enterprise technology ecosystem.  
+Currently leading engineering at **Minergo Systems** — owning technical direction, system architecture, and delivery quality.
 
-  return `# 👋 Halo, saya Ferry
-
-${headline}
-
-${bio}
-
-**Tech yang sering dipakai:** ${stacks}
-
-${valueProps}
-
-[![Contact Badge](https://img.shields.io/badge/Hire%20Me-Freelance-informational)](mailto:ferryops@gmail.com)
-[![Blog Badge](https://img.shields.io/badge/Blog-active-blue)](https://dev.to/${DEVTO_USERNAME})
-[![GitHub Followers](https://img.shields.io/github/followers/${GITHUB_USERNAME}?style=social)](https://github.com/${GITHUB_USERNAME})
+**Stack:** ${stacks}
 
 ---
 
-### 🚀 Catatan
-- Suka nongkrong di grup Facebook **Ingin Menjadi Programmer Handal, Namun Enggan Ngoding** 😄
-- Suka nulis dan berbagi cerita soal software engineering.
-- Tertarik sama produk yang sederhana, cepat dirilis, dan bisa berkembang.
+### 🧭 What I Do
 
-### 📝 Artikel Terbaru
-${formattedArticles || "_Belum ada artikel terbaru yang ditampilkan._"}
+- 🏗️ Design resilient system architecture and REST APIs that handle thousands of daily transactions.
+- ⛏️ Build **Fleet & Hauling Management Systems** integrating real-time tracking, IoT, and telematics.
+- 🚀 Automate CI/CD pipelines and improve deployment reliability.
+- 🧑‍🏫 Mentor engineers, run code reviews, and define engineering standards.
+- 🔗 Integrate third-party and legacy systems without disrupting existing workflows.
 
-### 🧩 Projects Terbaru
-| Artikel | Repositori |
-|--|--|
-${mergeColumns(formattedArticles, formattedRepos)}
+---
+
+### 🛠️ Selected Projects
+
+| Project | Stack |
+|---|---|
+| **Famous** — Fleet & Hauling Management System | Express.js · React · MariaDB · IoT |
+| **MHaulProX v2** — Next-gen Hauling Platform | Express.js · React · PostgreSQL · AI/ML |
+| **Digital Platforms** for Mining Industry | Next.js · TypeScript · Payload CMS · PHP |
+
+---
+
+### 📝 Latest Articles
+
+${formattedArticles || "_No articles found._"}
+
+---
+
+### 🔭 Recent Repositories
+
+| Repository | Description |
+|---|---|
+${formattedRepos || "| — | — |"}
 
 ---
 
 ### 📊 Stats
-![Github Stats](https://github-readme-stats.vercel.app/api?bg_color=0000&title_color=4C71F1&text_color=8A919F&line_height=24&border_color=8884&username=${GITHUB_USERNAME}&hide=contribs&show_icons=true&count_private=true&theme=vue)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?bg_color=0000&title_color=4C71F1&text_color=8A919F&card_width=240&border_color=8884&username=${GITHUB_USERNAME}&layout=compact&theme=vue)
 
-> Terakhir diperbarui: **${formattedDate}** (${TIMEZONE})
+![GitHub Stats](https://github-readme-stats.vercel.app/api?bg_color=0000&title_color=4C71F1&text_color=8A919F&line_height=24&border_color=8884&username=${GITHUB_USERNAME}&hide=contribs&show_icons=true&count_private=true&theme=vue)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?bg_color=0000&title_color=4C71F1&text_color=8A919F&card_width=240&border_color=8884&username=${GITHUB_USERNAME}&layout=compact&theme=vue)
+
+---
+
+### 📬 Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ferry%20Ananda%20Febian-0A66C2?logo=linkedin)](${LINKEDIN})
+[![Portfolio](https://img.shields.io/badge/Portfolio-ferryops.vercel.app-4C71F1)](${PORTFOLIO})
+[![Dev.to](https://img.shields.io/badge/Blog-dev.to%2Fferryops-0A0A0A?logo=devdotto)](https://dev.to/${DEVTO_USERNAME})
+[![Email](https://img.shields.io/badge/Email-ferry.a.febian%40gmail.com-EA4335?logo=gmail)](mailto:${EMAIL})
+
+> Last updated: **${formattedDate}** (${TIMEZONE})
 `;
 }
 
 /** ====== MAIN ====== */
 async function main() {
   try {
-    const [articles, repos] = await Promise.all([fetchArticles(DEVTO_USERNAME), fetchGitHubRepos(GITHUB_USERNAME)]);
+    const [articles, repos] = await Promise.all([
+      fetchArticles(DEVTO_USERNAME),
+      fetchGitHubRepos(GITHUB_USERNAME),
+    ]);
 
     const formattedArticles = formatArticles(articles);
     const formattedRepos = formatRepos(repos);
 
-    const now = new Date();
-    const formattedDate = now.toLocaleString("id-ID", {
+    const formattedDate = new Date().toLocaleDateString("en-US", {
       timeZone: TIMEZONE,
       year: "numeric",
       month: "long",
       day: "numeric",
     });
 
-    const readmeContent = buildReadme({
-      formattedArticles,
-      formattedRepos,
-      formattedDate,
-    });
+    const readmeContent = buildReadme({ formattedArticles, formattedRepos, formattedDate });
     fs.writeFileSync("README.md", readmeContent, "utf8");
-    console.log("README.md berhasil diperbarui.");
+    console.log("README.md updated successfully.");
   } catch (error) {
-    console.error("Terjadi kesalahan:", error);
+    console.error("An error occurred:", error);
     process.exitCode = 1;
   }
 }
