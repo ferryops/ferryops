@@ -11,6 +11,7 @@ const TIMEZONE = "Asia/Makassar";
 const EMAIL = "ferry.a.febian@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/ferry-ananda-febian";
 const PORTFOLIO = "https://ferryops.vercel.app";
+const STATS_HOST = "github-readme-stats-eight-theta.vercel.app";
 
 /** ====== FETCHERS ====== */
 async function fetchArticles(username) {
@@ -95,8 +96,8 @@ function buildReadme({ formattedArticles, formattedRepos, formattedDate }) {
 
 **Technical Lead & Full Stack Engineer** based in Balikpapan, East Kalimantan, Indonesia.
 
-I build scalable, reliable end-to-end systems for the mining and enterprise technology ecosystem.  
-Currently leading engineering at **Minergo Systems** — owning technical direction, system architecture, and delivery quality.
+I build scalable, reliable end-to-end systems — with a focus on the **mining industry**,  
+where I've worked on Fleet & Hauling Management, IoT integration, and operational data platforms.
 
 **Stack:** ${stacks}
 
@@ -138,8 +139,8 @@ ${formattedRepos || "| — | — |"}
 
 ### 📊 Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?bg_color=0000&title_color=4C71F1&text_color=8A919F&line_height=24&border_color=8884&username=${GITHUB_USERNAME}&hide=contribs&show_icons=true&count_private=true&theme=vue)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?bg_color=0000&title_color=4C71F1&text_color=8A919F&card_width=240&border_color=8884&username=${GITHUB_USERNAME}&layout=compact&theme=vue)
+![GitHub Stats](https://${STATS_HOST}/api?bg_color=0000&title_color=4C71F1&text_color=8A919F&line_height=24&border_color=8884&username=${GITHUB_USERNAME}&hide=contribs&show_icons=true&count_private=true&theme=vue)
+![Top Languages](https://${STATS_HOST}/api/top-langs/?bg_color=0000&title_color=4C71F1&text_color=8A919F&card_width=240&border_color=8884&username=${GITHUB_USERNAME}&layout=compact&theme=vue)
 
 ---
 
