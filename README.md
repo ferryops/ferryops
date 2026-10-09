@@ -44,12 +44,7 @@ where I've worked on Fleet & Hauling Management, IoT integration, and operationa
 
 | Repository | Description |
 |---|---|
-| [**facial-recognition-attendance-system**](https://github.com/ferryops/facial-recognition-attendance-system) | Facial Recognition Attendance System with Next.js and Face-api |
-| [**note-keeper-flutter**](https://github.com/ferryops/note-keeper-flutter) | Note Keeper adalah aplikasi pencatat sederhana berbasis Flutter yang memungkinkan pengguna menulis, menyimpan, dan menghapus catatan. Aplikasi ini mendukung mode gelap/terang, menyimpan catatan secara lokal dengan SQLite, dan menggunakan Sharedpreferences untuk menyimpan preferensi tema |
-| [**scrapping-PDDikti**](https://github.com/ferryops/scrapping-PDDikti) | Scrapping data kampus dan prodi dari PDDikti |
-| [**manajemen-stok-barang**](https://github.com/ferryops/manajemen-stok-barang) | null |
-| [**series-tracker**](https://github.com/ferryops/series-tracker) | Ekstensi untuk menyimpan episode dan menit terakhir saat menonton film atau series |
-| [**headless-cms-php**](https://github.com/ferryops/headless-cms-php) | null |
+| — | — |
 
 ---
 
@@ -67,4 +62,4 @@ where I've worked on Fleet & Hauling Management, IoT integration, and operationa
 [![Dev.to](https://img.shields.io/badge/Blog-dev.to%2Fferryops-0A0A0A?logo=devdotto)](https://dev.to/ferryops)
 [![Email](https://img.shields.io/badge/Email-ferry.a.febian%40gmail.com-EA4335?logo=gmail)](mailto:ferry.a.febian@gmail.com)
 
-> Last updated: **October 8, 2026** (Asia/Makassar)
+> Last updated: **October 9, 2026** (Asia/Makassar)
