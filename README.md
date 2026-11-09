@@ -31,12 +31,12 @@ where I've worked on Fleet & Hauling Management, IoT integration, and operationa
 
 ### 📝 Latest Articles
 
+- [📦 My Redis Payload Was Too Large, So I Just Gzipped It](https://dev.to/ferryops/my-redis-payload-was-too-large-so-i-just-gzipped-it-91f) — Nov 07, 2026
 - [I Stopped Struggling with SSH — Thanks to Termius](https://dev.to/ferryops/i-stopped-struggling-with-ssh-thanks-to-termius-3m8p) — Apr 16, 2026
 - [I Stopped Using useEffect for Data Fetching in React](https://dev.to/ferryops/i-stopped-using-useeffect-for-data-fetching-in-react-3ahn) — Dec 23, 2025
 - [🚀 My Experience Switching from VS Code to Zed](https://dev.to/ferryops/my-experience-switching-from-vs-code-to-zed-183d) — Oct 19, 2025
 - [📷Building a Face Recognition Attendance System with Next.js, TypeScript, face-api.js, and Supabase](https://dev.to/ferryops/building-a-face-recognition-attendance-system-with-nextjs-typescript-face-apijs-and-supabase-41jp) — Oct 15, 2025
 - [🚀 From 2–5 Minutes to < 1 Second: How a Small Nginx Config Change Boosted My Website](https://dev.to/ferryops/from-2-5-minutes-to-1-second-how-a-small-nginx-config-change-boosted-my-website-4h8j) — Sep 08, 2025
-- [Monolith vs Microservices: Kenapa Sebaiknya Mulai dari Monolith?](https://dev.to/ferryops/monolith-vs-microservices-kenapa-sebaiknya-mulai-dari-monolith-5bi7) — Aug 19, 2025
 
 ---
 
@@ -67,4 +67,4 @@ where I've worked on Fleet & Hauling Management, IoT integration, and operationa
 [![Dev.to](https://img.shields.io/badge/Blog-dev.to%2Fferryops-0A0A0A?logo=devdotto)](https://dev.to/ferryops)
 [![Email](https://img.shields.io/badge/Email-ferry.a.febian%40gmail.com-EA4335?logo=gmail)](mailto:ferry.a.febian@gmail.com)
 
-> Last updated: **November 8, 2026** (Asia/Makassar)
+> Last updated: **November 9, 2026** (Asia/Makassar)
