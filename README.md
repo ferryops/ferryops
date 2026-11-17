@@ -62,4 +62,4 @@ where I've worked on Fleet & Hauling Management, IoT integration, and operationa
 [![Dev.to](https://img.shields.io/badge/Blog-dev.to%2Fferryops-0A0A0A?logo=devdotto)](https://dev.to/ferryops)
 [![Email](https://img.shields.io/badge/Email-ferry.a.febian%40gmail.com-EA4335?logo=gmail)](mailto:ferry.a.febian@gmail.com)
 
-> Last updated: **November 16, 2026** (Asia/Makassar)
+> Last updated: **November 17, 2026** (Asia/Makassar)
